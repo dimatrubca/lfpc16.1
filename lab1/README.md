@@ -23,7 +23,7 @@ To draw the graph, *networkx* library is used.
 
 ## Determine the grammar type by the Chromsky classification
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/task.png" width="150">
-According to Noam Chomosky, there are 4 types of grammar. The given grammar can be identified as being of type 4 and represents **right linear grammar**, as the nonterminal symbols in the result of each production rule are on the left side.
+According to Noam Chomosky, there are 4 types of grammar. The given grammar can be identified as being of type 4 and represents **right linear grammar**, as the nonterminal symbols in the result of each production rule are on the right side.
 
 
 
