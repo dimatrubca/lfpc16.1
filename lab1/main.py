@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 G = {}
 
-def read_input():
-    with open('input.txt') as f:
+def read_input(filename):
+    with open(filename) as f:
         for line in f.read().splitlines():
             A = line[0]
             a = line[3]
@@ -42,7 +42,9 @@ def is_accepted(s):
 def check_expressions(filename):
     with open(filename, 'r') as f:
         for expression in f.read().splitlines():
-            print(expression + ": ", is_accepted(expression))
+            message = "Accepted" if is_accepted(expression) else "Not Accepted"
+
+            print(expression + ": ", message)
     
 
 
@@ -65,8 +67,8 @@ def draw_graph():
 
 
 def main():
-    read_input()
-    check_expressions("expressions.txt")
+    read_input("productions.txt")
+    check_expressions("check_strings.txt")
     draw_graph()
 
 
