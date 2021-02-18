@@ -18,6 +18,6 @@ Checked words
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/checked_words.png" width="350">
 
 
-Graph 
+Graph <br/>
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/graph.png" width="550">
 
