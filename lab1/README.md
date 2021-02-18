@@ -13,11 +13,11 @@ Each string line from the file *check_strings.txt* is then checked whether it's 
 To draw the graph, *networkx* library is used.
 
 ## Results:
-Checked words
+**Checked words**
 
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/checked_words.png" width="350">
 
 
-Graph <br/>
+**FA graph** <br/><br/><br/>
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/graph.png" width="550">
 
