@@ -7,9 +7,17 @@
 3. Using some graphic library plot FA graph (Bonus Point)
 
 ## Implementation:
-The grammar (production rules) is parsed from the file *input.txt*<br />
+The grammar (production rules) is parsed from the file *productions.txt*<br />
 To present the graph (FA), I have used a hashmap, where to each key (the nonterminal simbol on the left side of the production) corresponds a list of pairs consisting of the terminal and nonterminal (or None if doesn't exist) symbols.<br />
 Each string line from the file *check_strings.txt* is then checked whether it's accepted by the FA, by traversing the graph.<br />
 To draw the graph, *networkx* library is used.
 
 ## Results:
+Checked words
+
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/checked_words.png" width="450">
+
+Graph:
+
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/graph.png" width="350">
+
