@@ -21,3 +21,7 @@ To draw the graph, *networkx* library is used.
 **FA graph** <br/><br/><br/>
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab1/images/graph.png" width="550">
 
+<br/>
+### 4. Determine the grammar type by the Chromsky classification
+
+
