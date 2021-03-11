@@ -1,0 +1,8 @@
+q0
+F = {q3}
+t(q0,a)=q1
+t(q1,b)=q2
+t(q2,c)=q3
+t(q3,a)=q1
+t(q1,b)=q1
+t(q0,b)=q2
