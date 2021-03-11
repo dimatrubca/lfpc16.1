@@ -177,11 +177,12 @@ void read() {
     getline(fin, q0NFA);
     parseFinalStates();
     parseTransitions();
-    convertToDFA();
-    printDFATable();
 }
 
 int main() {
     read();
+    convertToDFA();
+    printDFATable();
+
     return 0;
 }
