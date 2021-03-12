@@ -14,12 +14,6 @@ using namespace std;
 
 ifstream fin("input.txt");
 
-struct transitionNode {
-    string symbol;
-    string resultState;
-};
-
-
 // key -> <state, transition>, value -> resultingStates
 map<pair<string, string>, vector<string> > NFA;
 map<pair<string, string>, string> DFA;
@@ -128,17 +122,10 @@ void convertToDFA() {
             if (substates.find(newStateName) == substates.end()) {
                 substates[newStateName].insert(resultingStates.begin(), resultingStates.end());
                 statesQueue.push(newStateName);
+
+                if (!areDisjoint(resultingStates, finalStatesNFA)) finalStatesDFA.insert(newStateName);
             }
-
         }
-    }
-
-    // get final states
-    for (auto keyVal : substates) {
-        string stateName = keyVal.first;
-        set<string> mappedStates = keyVal.second;
-
-        if (!areDisjoint(mappedStates, finalStatesNFA)) finalStatesDFA.insert(stateName);
     }
 }
 
@@ -153,13 +140,13 @@ void printDFATable() {
         maxWidth = max(maxWidth, (int) state.size() + 4);
     }
 
-    cout<<setw(maxWidth)<<"DFA";
-    for (string symbol : inputSymbols) cout<<setw(maxWidth)<<symbol;
+    cout<<setw(maxWidth)<<"DFA |";
+    for (string symbol : inputSymbols) cout<<setw(maxWidth)<<symbol<<" |";
     cout<<'\n';
 
     for (auto keyVal : substates) {
         string stateName = keyVal.first;
-        string modStateName = stateName;
+        string modStateName = stateName + " |";
         set<string> substates = keyVal.second;
 
         if (finalStatesDFA.find(stateName) != finalStatesDFA.end()) modStateName = "*" + modStateName;
@@ -167,10 +154,11 @@ void printDFATable() {
 
         cout<<setw(maxWidth)<<modStateName;
         for (string symbol : inputSymbols) {
-            cout<<setw(maxWidth)<<DFA[{stateName, symbol}];
+            cout<<setw(maxWidth)<<DFA[{stateName, symbol}]<<" |";
         }
         cout<<'\n';
     }
+
 }
 
 void read() {
