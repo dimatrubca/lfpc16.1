@@ -1,18 +1,29 @@
-# Laboratory Task No. 2 NFA to DFA conversion
+# Laboratory Task No. 3 Chomsky Normal Form (CNF)
+
 ## Variant: 10
+**Input format**:
 
-## Implementation
-1 .Convert NFA from your variant to DFA on paper, writing all transitions and drawing converted automato.
+First line contains 3 integers nn, nt, nr, where nn is the number of nonterminals, nt - number of terminals, nr - number of rules
 
-<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab2/images/ab.jpg" width="500">
+The second line contains nn characters, specifying the nonterminal symbols from the grammar
 
-2. Write program which converts nondeterministic finite automato (NFA) to deterministic finite automato (DFA)
+The third line contains nt characters, specifying the terminals from the grammar
 
-The program can be found inside lab2.cpp file. There is a separate function for parsing the input data, converting the NFA to DFA, as well as for drawing the table for the obtained DFA.
+The next nr line contain one character (from the nonterminal set), followed by a string, specifying the production it forms.
 
-3. Display converted automato in form of graph or transition table
 
-<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab2/images/dfa_table.png" width="450">
+## Manual deduction of the Chomsky Normal Form:
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/manual1.jpg" width="500">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/manual2.jpg" width="500">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/manual3.jpg" width="500">
 
+
+## Program output:
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/init.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/eps.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/unit.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/inaccess.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/nonprod.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/chom.PNG" width="450">
 
 
