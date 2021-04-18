@@ -22,8 +22,8 @@ The next nr line contain one character (from the nonterminal set), followed by a
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/init.PNG" width="400">
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/eps.PNG" width="400">
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/unit.PNG" width="400">
-<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/nonprod.PNG" width="400">
-<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/inaccess.PNG" width="400">
-<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/chom.PNG" width="400">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/inaccess.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/nonprod.PNG" width="450">
+<img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab3/images/chom.PNG" width="450">
 
 
