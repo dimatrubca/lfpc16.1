@@ -188,19 +188,43 @@ void removeNonProductiveSymbols() {
 }
 
 void printRules() {
+    cout<<"\nVn = {";
+
+    bool isFirst = true;
+    for (auto s : Vn) {
+        if (!isFirst) cout<<", ";
+        else isFirst = false;
+
+        cout<<s;
+    }
+    cout<<"}\n";
+
+    cout<<"Vt = {";
+
+    isFirst = true;
+    for (auto s : Vt) {
+        if (!isFirst) cout<<", ";
+        else isFirst = false;
+
+        cout<<s;
+    }
+    cout<<"}\n";
+
+    cout<<"P = {\n";
     for (auto nonterm : Vn) {
-        bool isFirst = true;
+        isFirst = true;
         for (auto deriv : G[nonterm]) {
             if (!isFirst) cout<<" | ";
             else {
                 isFirst = false;
-                cout<<nonterm<<" -> ";
+                cout<<"\t"<<nonterm<<" -> ";
             }
 
             cout<<deriv;
         }
         cout<<"\n";
-    } cout<<"\n\n";
+    }
+    cout<<"}\n\n";
 }
 
 void convertToChomsky() {
@@ -271,6 +295,9 @@ void convertToChomsky() {
 
 int main() {
     read();
+
+    cout<<"Initial grammar:\n";
+    printRules();
 
     eliminateEpsProductions();
     cout<<"After eliminating Eps Productions:\n";
