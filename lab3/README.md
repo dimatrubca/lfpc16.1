@@ -1,5 +1,15 @@
-# Laboratory Task No. 2 NFA to DFA conversion
+# Laboratory Task No. 3 Chomsky Normal Form (CNF)
+
 ## Variant: 10
+Input format:
+First line contains 3 integers nn, nt, nr, where nn is the number of nonterminals, nt - number of terminals, nr - number of rules
+
+The second line contains nn characters, specifying the nonterminal symbols from the grammar
+
+The third line contains nt characters, specifying the terminals from the grammar
+
+The next nr line contain one character (from the nonterminal set), followed by a string, specifying the production it forms.
+
 
 ## Implementation
 1 .Convert NFA from your variant to DFA on paper, writing all transitions and drawing converted automato.
