@@ -108,9 +108,6 @@ void eliminateEpsProductions() {
     }
 }
 
-void DFS(int x, map<char, set<char>> V) {
-
-}
 
 void eliminateUnitProductions() {
     // eliminate unit productions
