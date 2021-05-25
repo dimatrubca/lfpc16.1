@@ -15,10 +15,13 @@ The last last contains the input string to be analyzed
 
 ## Program output:
 Parsed grammar:
+
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab4/images/grammar.png" width="500">
 First and Follow sets:
+
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab4/images/firstfollow.png" width="500">
 Simple Precendance Relations Matrix:
+
 <img src="https://github.com/dimatrubca/lfpc16.1/blob/master/lab4/images/spmatrix.png" width="500">
 
 
