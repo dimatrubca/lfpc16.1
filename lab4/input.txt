@@ -1,0 +1,11 @@
+4 4 7
+S D A Z
+a b * -
+S D
+A DZ
+D b
+Z -
+D DA
+D a
+Z *
+ab-a*ab*-
